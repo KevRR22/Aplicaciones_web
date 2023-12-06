@@ -1,0 +1,359 @@
+/* Definición del estilo del perfil */
+.profile {
+	background: linear-gradient(to bottom, green, blue);
+	padding: 30px;
+	text-align: center;
+  }
+  
+  /* Estilo de la sección de información personal */
+  .profile-info {
+	margin-top: 20px;
+	color: rgb(0, 0, 0);
+  }
+  
+  /* Estilo de la imagen de perfil */
+  .profile-img {
+	border-radius: 50%;
+	width: 250px;
+	height: 240px;
+	margin: 0 auto;
+	display: block;
+  }
+  
+
+
+
+
+/* Estilos generales */
+
+body {
+	background-color: rgb(0, 0, 0);
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background: linear-gradient(to bottom right, green, rgb(0, 0, 0));
+	color: rgb(0, 0, 0);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 3rem;
+	margin: 0;
+}
+
+nav {
+	margin-top: 1.5rem;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin: 0.5rem;
+}
+
+nav a {
+	background-color: rgb(0, 0, 0);
+	border: 2px solid green;
+	border-radius: 5px;
+	color: green;
+	display: block;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+	background-color: green;
+	color: rgb(0, 0, 0);
+}
+
+main {
+	margin: 2rem auto;
+	max-width: 800px;
+	padding: 0 1rem;
+}
+
+section {
+	margin: 3rem 0;
+}
+
+section h2 {
+	font-size: 2.5rem;
+	margin: 0;
+}
+
+section p {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	margin-top: 1.5rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Estilos específicos */
+
+#seccion1 {
+	background-color: rgb(0, 0, 0);
+	padding: 2rem;
+}
+
+#seccion2 {
+	background-color: rgb(0, 0, 0);
+	padding: 2rem;
+}
+#seccion3 {
+	background-color: rgb(0, 0, 0);
+	padding: 2rem;
+}
+#seccion4 {
+	background-color: rgb(0, 0, 0);
+	padding: 2rem;
+}
+#seccion5 {
+	background-color: rgb(0, 0, 0);
+	padding: 2rem;
+}
+#seccion6 {
+	background-color: rgb(0, 0, 0);
+	padding: 2rem;
+}
+#seccion7 {
+	background-color: rgb(0, 0, 0);
+	padding: 2rem;
+}
+
+/*Modal */
+
+/** About Us **/
+.about-us{width: 100%;}
+.about-us .info{
+    width: 100%;
+    margin-top: 100px;
+}
+.about-us .info h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+.about-us .info p {
+   width: 80%;
+   margin:50px auto;
+   text-align: center;
+   color:#000;
+   font-size: 19px;
+   line-height: 40px;
+}
+.about-us .info hr{
+    width: 90%;
+    border:none;
+    height: 2px;
+    background: #4d4d4d;
+    margin:auto;
+}
+.about-us .free-content{
+    width: 100%;
+    margin-top: 100px;
+    background: #1B9CFC;
+    padding:30px;
+}
+.about-us .free-content h4{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color:#fff;
+}
+.about-us .free-content .icons{
+    width: 90%;
+    margin:30px auto;
+    display: flex;
+    justify-content: center;
+}
+.about-us .free-content .icons > div{width: 100%; margin:0px 30px;}
+.about-us .free-content .icons > div > .span-icon{
+    width:100%;
+    font-size: 40px;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+}
+.about-us .free-content .icons > div h6{
+    font-size: 25px;
+    color:#fff;
+    text-align: center;
+    font-weight:normal;
+    margin:20px 0px 5px 0px;
+}
+.about-us .free-content .icons > div p{
+    font-size: 18px;
+    text-align: center;
+    color:#fff;
+}
+
+/** Gallery **/
+.gallery-section{width: 100%;}
+.animal-icon{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.animal-icon i{
+    font-size: 120px;
+    color:#000;
+}
+.gallery-content{
+    width: 90%;
+    margin:30px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 230px);
+    grid-gap: 10px;
+}
+.gallery-content .img-card{
+    width: 100%;
+    width: 100%;
+}
+.gallery-content .img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 300ms;
+    cursor: pointer;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:rgba(0,0,0,0.7);
+    z-index: 999999;
+    cursor: pointer;
+    display:none;
+}
+.modal #imgModal{
+    width: 75%;
+    margin:50px auto;
+    height:75%;
+    display: block;
+    object-fit: cover;
+    cursor: auto;
+}
+.modal #caption{
+    text-align: center;
+    color:#fff;
+    font-size: 25px;
+    font-weight: normal;
+    cursor: auto;
+    text-transform: uppercase;
+}
+.modal #closeModal{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    color:#fff;
+    font-size: 30px;
+    transition: 200ms;
+}
+
+/** Footer **/
+footer{
+    width: 100%;
+    height: 60px;
+    margin-top: 100px;
+    background: #000;
+}
+footer p{
+    text-align: center;
+    line-height: 60px;
+    color:#fff;
+}
+
+/* Continúa con los estilos específicos para cada sección */
+
+footer {
+	background: linear-gradient(to bottom right, rgb(0, 0, 0), green);
+	color: yellow;
+	padding: 1rem;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+}
+.button {
+	margin: 10px;
+	padding: 10px 30px;
+	border-radius: 30px;
+	color: yellow;
+	text-align: center;
+	text-decoration: none;
+	background-image: linear-gradient(to right, green, rgb(0, 0, 0));
+	transition: all 0.3s ease 0s;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	font-size: 20px;
+	font-weight: bold;
+  }
+  
+  .button:hover {
+	transform: translateY(-5px);
+	background-color: rgb(0, 0, 0);
+  }
+  
+  .button:active {
+	transform: translateY(2px);
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .ov-btn-grow-spin {
+    background: rgb(0, 0, 0); /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 2px solid #0f08d4; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .ov-btn-grow-spin:hover {
+    color: #fff;/* color de fuente hover */
+  }
+  .ov-btn-grow-spin::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0) rotate(-180deg);
+    transition: all 0.3s ease;
+  }
+  .ov-btn-grow-spin:hover::after {
+    transition: all 0.3s ease-out;
+    transform: scale(1, 1) rotate(0deg);
+  }
